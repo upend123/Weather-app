@@ -160,7 +160,9 @@ fun WeatherPageUI(viewModel: WeatherViewModel = WeatherViewModel()) {
                      is NetworkResponse.Loading -> {
                          CircularProgressIndicator(
                              color = Color.Cyan,
-                             strokeWidth = 4.dp
+                             strokeWidth = 6.dp,
+                             modifier = Modifier.size(60.dp).align(Alignment.Center)
+
                          )
                      }
                      is NetworkResponse.Error -> {
